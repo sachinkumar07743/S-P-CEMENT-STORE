@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>S P CEMENT STORE | Business Website Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-family: 'Playfair Display', serif;
+}
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+nav
+{
+flex: 1;
+text-align: right;
+margin-top: 20px;
+}
+nav ul{
+display: inline-block;
+list-style-type: none;
+}
+nav ul li{
+display: inline-block;
+margin-right: 20px;
+text-align: center;
+}
+a{
+text-decoration:none;
+color:#555;
+}
+p{
+color:#555;
+}
+.container{
+max-width:1300px;
+margin:auto;
+padding-left:25px;
+padding-right:25px;
+}
+.row{
+display: flex;
+align-items:center;
+flex-wrap:wrap;
+justify-content:space-around;
+}
+.col-2{
+flex-basis:50%;
+min-width:300px;
+}
+.col-2 img{
+max-width:100%;
+padding:50px 0;
+}
+.col-2 h1{
+font-size:50px;
+line-height:60px;
+margin: 25px 0;
+}
+.btn{
+display: inline-block;
+background: #ff523b;
+color: #fff;
+padding: 8px 30px;
+margin: 30px 0;
+border-radius:30px;
+transition: background 0.3s;
+}
+.btn:hover{
+background:#563434;
+}
+.header{
+background:radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+margin-top:90px;
+}
+.categories{
+margin:70px 0
+}
+.col-3{
+flex-basis:30%;
+min-width:250px;
+margin-bottom:40px;
+}
+.col-3 img{
+width: 100%;
+}
+.small-container{
+max-width:1080;
+margin:auto;
+padding-left:25px;
+padding-right:25px;
+}
+.col-4{
+flex-basis:25%
+padding:10px;
+min-width:200px;
+margin-botom:50px;
+transition:transform 0.5s;
+}
+.col-4 img{
+width:100%;
+}
+.title{
+text-align:center;
+margin:0 auto 80px;
+position:relative;
+line-height:60px;
+color:#555;
+}
+.title:after{
+content:'';
+background:#ff523b;
+width:80px;
+height:5px;
+border-radius:5px;
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+}
+h4{
+color:#555;
+font-weight:normal;
+}
+.col-4{
+font-size:14px;
+}
+rating .fa{
+color:#ff523b;
+}
+.col-4:hover{
+transform:translateY(-5px);
+}
+/*----------offer---------*/
+
+.offer{
+background:radial-gradient(#fff,#ffd6d6);
+margin-top:80px;
+padding:30px 0;
+}
+.col-2 .offer-img{
+padding:50px;
+}
+small{
+color:#555;
+}
+/*----------brands----------*/
+.brands{
+margin: 100px auto;
+}
+.col-5{
+width:160px;
+}
+.col-5 img{
+width: 100%;
+cursor: pointer;
+filter: grayscale(100%);
+}
+.col-5 img:hover{
+filter:grayscale(0);
+}
+/*-------------------footer--------------------*/
+.footer{
+background: #000;
+color:#8a8a8a;
+font-size:14px;
+padding:60px 0 20px;
+}
+.footer p{
+color:#8a8a8a;
+}
+.footer h3{
+color:#fff;
+margin-bottom:20px;
+}
+.footer col-1,.footer col-2,.footer col-3,.footer col-4{
+min-width: 250px;
+margin-bottom:20px;
+}
+.footer col-1{
+flex-basis:30px;
+}
+.footer col-2{
+flex: 1;
+text-align:center;
+}
+.footer col-2 img{
+width:180px;
+margin-bottom:20px;
+}
+.footer col-3,.footer col-4{
+flex-basis:12%;
+text-align:center;
+}
+ul{
+list style type:none;
+}
+.app-logo{
+margin-top:20px;
+}
+.app-logo img{
+width:140px;
+}
+.copyright{
+text-align: center;
+}
+.menu-icon{
+width:28px;
+margin-left: 20px;
+display: none;
+}
+/*---media query for menu-----*/
+@media only screen and (max-width:800px){
+nav ul{
+position:absolute;
+top:70px;
+left:0;
+background:#333;
+width:100%;
+overflow: hidden;
+transition: max-height 0.5s;
+}
+nav ul li{
+display: block;
+margin-right: 50px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+nav ul li a{
+color: #fff;
+}
+.menu-icon{
+display:block;
+cursor:pointer;
+}
+}
+</style>
+</head>
+<body>
+<div class ="header">
+<div class = "container">
+<div class="navbar">
+    <div class="logo">
+       <img src="E:\S P Cement Store\images\SP.jpg" width="180px">
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="">Home</a></li>
+<li><a href="">Products</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Login</a></li>
+</ul>
+</nav>
+<img src= "E:\S P Cement Store\images\cart.png" width="55px" height="45px">
+<img src= "E:\S P Cement Store\images\menu.png" class="menu-icon" onclick= "menutoggle()">
+</div>
+<div class="row">
+<div class="col-2">
+<h1>Your Building Is Our Dream!!</h1>
+<p>Building a <b> home </b> is everyone's <b> Dream </b> <br> and <br> We are here to help you.</p>
+<a href="" class="btn">Explore Now &#8594 </a>
+</div>
+<div class="col-2">
+   <img src="E:\S P Cement Store\images\home1.jpg"width: "3000px">
+</div>
+</div>
+</div>
+</div>
+
+<!----------featured categories----------->
+
+<div class="categories">
+<div class="small-container">
+<div class="row">
+<div class="col-3">
+<img src="E:\S P Cement Store\images\Cement.jpg"height="100px";width="100px";>
+</div>
+<div class="col-3">
+<img src="E:\S P Cement Store\images\steel.jpg"height="100px";width="100px";>
+</div>
+<div class="col-3">
+<img src="E:\S P Cement Store\images\stone chip.jpg"height="100px";width="100px";>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!----------featured products----------->
+
+
+<div class= "small-container">
+<h2 class="title">Featured Products</h2>
+<div class ="row">
+<div class="col-4">
+<img src="E:\S P Cement Store\images\Ultratech PSC.jpg"height="200px";width="50px";>
+<h4>Ultratech PSC </h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Rs 300</p>
+</div>
+<div class="col-4">
+<img src="E:\S P Cement Store\images\magadh.jpg"height="100px";width="100px";>
+<h4>Magadh TMT 8mm</h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Rs 70000/ton</p>
+</div>
+<div class="col-4">
+<img src="E:\S P Cement Store\images\sand.jpeg"height="100px";width="100px";>
+<h4>Sand 100 cft</h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Rs 8000</p>
+</div>
+<div class="col-4">
+<img src="E:\S P Cement Store\images\Bricks.jpg"height="100px";width="100px";>
+<h4>Bricks 1 no.</h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Rs 15000</p>
+</div>
+
+</div>
+</div>
+
+<!----------offer--------------->
+<div class="offer">
+<div class="small-container">
+<div class="row">
+<div class="col-2">
+<img src="E:\S P Cement Store\images\birla gold.jpg" class="offer-img">
+</div>
+<div class="col-2">
+<p>Exclusively Available on S P Cement Store</p>
+<h1>Birla Gold Premium Cement</h1>
+<br><small>The year end sale is here!!</small>
+<a href="" class="btn"> Buy Now &#8594;</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<!------------offer---------------->
+<div class="brands">
+<div class="small-container">
+<div class="row">
+<div class="col-5">
+<img src="E:\S P Cement Store\images\acc logo.png"height="50px";width="50px";>
+</div>
+<div class="col-5">
+<img src="E:\S P Cement Store\images\kamdhenu logo.png"height="70px";width="60px";>
+</div>
+<div class="col-5">
+<img src="E:\S P Cement Store\images\magadh logo.png"height="70px";width="80px";>
+</div>
+<div class="col-5">
+<img src="E:\S P Cement Store\images\Ultratech Cement Logo.png"height="50px";width="50px";>
+</div>
+</div>
+</div>
+</div>
+
+<!-------------footer-------------->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="footer-col-1">
+<h3>Download Our App</h3>
+<p>Download App  For Android and Ios mobile App</p>
+<div class="app-logo">
+<img src="E:\S P Cement Store\images\playstore.png"heigth="50px";width="50px";>
+<img src="E:\S P Cement Store\images\ios store.jpg"heigth="100px";width="100px";>
+</div>
+</div>
+<div class="footer-col-2">
+<img src="E:\S P Cement Store\images\SP.jpg" height="100px";width="100px";>
+<p>Our purpose Is To Sustainably Make <br>The Pleasure and Benfits Of Construction To The Many.</p>
+</div>
+<div class="footer-col-3">
+<h3>Useful Links</h3>
+<ul>
+<li>Coupons</li>
+<li>Blog Post</li>
+<li>Return Policy</li>
+<li>Join Affiliate</li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3>Follow Us</h3>
+<ul>
+<li>Facebook</li>
+<li>Twitter</li>
+<li>Instagram</li>
+<li>Youtbe</li>
+</ul>
+</div>
+</div>
+<hr>
+<p class="copyright">Copyright 2022 - Easy Tutorials</p>
+</div>
+</div>
+
+<!----------js for toggle menu------------>
+<script>
+var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle() {
+
+if(MenuItems.style.maxHeight = "0px")
+{
+MenuItems.style.maxHeight = "200px"
+}
+else {
+MenuItems.style.maxHeight = "0px"
+}
+}
+
+/*---------------media query for less than 600 	
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
